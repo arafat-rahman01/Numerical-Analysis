@@ -17,7 +17,7 @@ int main(){
     while((b-a)/2.0>tol){
         c=(a+b)/2.0;
         if(f(c)==0.0) break;
-        if(f(a)*f(b)<0) b=c;
+        if(f(a)*f(c)<0) b=c;
         else a=c;
         i++;
     }
